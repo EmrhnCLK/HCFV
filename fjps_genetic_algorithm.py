@@ -26,7 +26,7 @@ import sys
 import json
 import random
 import copy
-
+import time
 class FlexibleJobShopInstance:
     """
     Represents a FJSP instance where each operation may run on multiple machines.
@@ -184,6 +184,7 @@ class GeneticAlgorithm:
         return best
 
 if __name__ == '__main__':
+    start_time = time.time()
     filename = 'benchmark.json'
     try:
         with open(filename) as f:
@@ -197,3 +198,5 @@ if __name__ == '__main__':
     print("\nBest makespan found:", best.fitness)
     # print detailed schedule
     print(best.decode())
+    end_time = time.time()
+    print(f"\n⏱️ Çözüm süresi: {end_time - start_time:.4f} saniye")

@@ -1,5 +1,6 @@
 import json
 from gurobipy import Model, GRB, quicksum
+import time
 
 def solve_fjsp(data):
     model = Model("FlexibleJobShop")
@@ -80,6 +81,9 @@ def solve_fjsp(data):
         print("\n❌ Optimal çözüm bulunamadı.")
 
 if __name__ == '__main__':
+    start_time = time.time()
     with open("benchmark.json") as f:
         data = json.load(f)
     solve_fjsp(data)
+    end_time = time.time()
+    print(f"\n⏱️ Çözüm süresi: {end_time - start_time:.4f} saniye")
