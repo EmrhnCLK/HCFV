@@ -4,7 +4,7 @@ import time
 
 def solve_fjsp(data):
     model = Model("FlexibleJobShop")
-    model.setParam('OutputFlag', 0)  # Konsolu temiz tutmak için
+    model.setParam('OutputFlag', 1)  # Konsolu temiz tutmak için
 
     BIG_M = 1000
     jobs = data
