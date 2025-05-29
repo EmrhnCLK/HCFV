@@ -2,7 +2,7 @@
 """
 Flexible Job Shop Scheduling – Exact MILP Solver with Gurobi
 -----------------------------------------------------------
-Reads an instance from ``benchmark.json`` (same folder) and solves the
+Reads an instance from ``instance.json`` (same folder) and solves the
 makespan-minimisation problem exactly, *without* any time-limit.  The JSON file
 must have the following structure:
 
@@ -26,7 +26,7 @@ must have the following structure:
 
 How to run
 ~~~~~~~~~~
-1.   Place ``benchmark.json`` next to this script.
+1.   Place ``instance.json`` next to this script.
 2.   ``pip install gurobipy`` and make sure you have a valid Gurobi licence.
 3.   ``python fjss_exact_gurobi.py``
 
@@ -41,7 +41,7 @@ from gurobipy import GRB
 # ---------------------------------------------------------------------------
 # Data loading
 # ---------------------------------------------------------------------------
-INSTANCE_FILE = Path(__file__).with_name("benchmark.json")
+INSTANCE_FILE = Path(__file__).with_name("instance.json")
 
 with INSTANCE_FILE.open() as fp:
     raw_data = json.load(fp)

@@ -33,8 +33,8 @@ def parse_mk01_format(filepath):
     return jobs
 
 if __name__ == '__main__':
-    input_path = 'mk03.txt'  # Brandimarte formatındaki dosya
-    output_path = 'benchmark.json'
+    input_path = 'mk01.txt'  # Brandimarte formatındaki dosya
+    output_path = 'instance.json'
 
     result = parse_mk01_format(input_path)
 

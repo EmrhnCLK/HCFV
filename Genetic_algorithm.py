@@ -309,7 +309,7 @@ class GeneticAlgorithm:
 # ---------------------------------------------------------------------------
 if __name__=="__main__":
     ap=argparse.ArgumentParser(description="GA for FJSP")
-    ap.add_argument("-f","--file",default="benchmark.json")
+    ap.add_argument("-f","--file",default="instance.json")
     ap.add_argument("--pop",type=int,default=120)
     ap.add_argument("--gens",type=int,default=150)
     ap.add_argument("--cx",type=float,default=0.9)
@@ -330,7 +330,7 @@ if __name__=="__main__":
     print(f"🏆 En iyi makespan: {best.fitness}")
     print(f"⏱️  Süre: {elapsed:.2f}s")
 
-    out_dir=pathlib.Path("/home/xibalba/Masaüstü/B-T-RME/PRE_MODEL/")
+    out_dir=pathlib.Path("/home/xibalba/Masaüstü/B-T-RME/pool")
     out_dir.mkdir(parents=True,exist_ok=True)
     ts=time.strftime("%Y-%m-%dT%H-%M-%S")
     fname=f"{pathlib.Path(args.file).stem}_ga_{ts}.json"

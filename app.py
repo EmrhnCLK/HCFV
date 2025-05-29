@@ -69,7 +69,7 @@ def run_solver_stream(script_path: Path, jobs_json: List[Dict[str, Any]], placeh
     result: Dict[str, Any] = {"makespan": None, "runtime": 0.0, "stdout": "", "stderr": ""}
     collected_lines: List[str] = []
     with tempfile.TemporaryDirectory() as tmpdir:
-        json_path = Path(tmpdir) / "benchmark.json"
+        json_path = Path(tmpdir) / "instance.json"
         with open(json_path, "w", encoding="utf-8") as fp:
             json.dump(jobs_json, fp, indent=2)
 

@@ -183,7 +183,7 @@ def discrete_pso(inst: FlexibleJobShopInstance, *, swarm_size=60, iters=300,
 # ---------------------------------------------------------------------------
 if __name__ == "__main__":
     ap=argparse.ArgumentParser()
-    ap.add_argument("-f","--file",default="benchmark.json")
+    ap.add_argument("-f","--file",default="instance.json")
     ap.add_argument("--swarm",type=int,default=60)
     ap.add_argument("--iters",type=int,default=300)
     ap.add_argument("--w",type=float,default=0.3)
@@ -209,7 +209,7 @@ if __name__ == "__main__":
     print(f"🌟 En iyi makespan: {best.fitness}\n⏱️  Süre: {elapsed:.2f} s")
 
     # JSON export
-    out_dir=pathlib.Path("/home/xibalba/Masaüstü/B-T-RME/PRE_MODEL/")
+    out_dir=pathlib.Path("/home/xibalba/Masaüstü/B-T-RME/pool")
     out_dir.mkdir(parents=True,exist_ok=True)
     timestamp=time.strftime("%Y-%m-%dT%H-%M-%S")
     fname=f"{pathlib.Path(args.file).stem}_pso_{timestamp}.json"

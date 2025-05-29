@@ -7,7 +7,7 @@ Flexible Job‑Shop Scheduling (FJSP) — Simulated Annealing (SA) v5
 Usage:
 ------
 ```bash
-python Simulated_annealing.py [-f benchmark.json] [--seed SEED] \
+python Simulated_annealing.py [-f instance.json] [--seed SEED] \
     [--alpha ALPHA] [--inner-loop N] [--max-iter M] [--p-cp P] \
     [--reheat-every R] [--reheat-mult RM] [--save PATH]
 ```
@@ -169,7 +169,7 @@ class Solution:
 # ----------------------------------------------------------------------------
 def parse_args():
     ap=argparse.ArgumentParser()
-    ap.add_argument("-f","--file",default="benchmark.json")
+    ap.add_argument("-f","--file",default="instance.json")
     ap.add_argument("--seed",type=int)
     ap.add_argument("--alpha",type=float,default=0.9985)
     ap.add_argument("--inner-loop",type=int,default=60)
@@ -210,7 +210,7 @@ def simulated_annealing(inst,args):
     print(f"🏆 Best makespan: {best.fitness}")
     print(f"⏱️  Süre: {elapsed:.2f}s")
     # export JSON
-    out_dir=pathlib.Path("/home/xibalba/Masaüstü/B-T-RME/PRE_MODEL/")
+    out_dir=pathlib.Path("/home/xibalba/Masaüstü/B-T-RME/pool")
     out_dir.mkdir(parents=True,exist_ok=True)
     ts=time.strftime("%Y-%m-%dT%H-%M-%S")
     fname=f"{pathlib.Path(args.file).stem}_sa_{ts}.json"

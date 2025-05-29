@@ -3,7 +3,7 @@
 Flexible Job Shop Scheduling – HCVF-enhanced MILP Solver with Gurobi
 --------------------------------------------------------------------
 Integrates Heuristic-Consensus Variable Fixing (HCVF). Requires both
-"benchmark.json" and "consensus.json" in same folder.
+"instance.json" and "consensus.json" in same folder.
 """
 import json
 from pathlib import Path
@@ -23,7 +23,7 @@ EST = {int(k): v for k,v in EST_raw.items()}
 LST = {int(k): v for k,v in LST_raw.items()}
 
 # Load instance data
-raw = json.loads(Path("benchmark.json").read_text())
+raw = json.loads(Path("instance.json").read_text())
 jobs = [job["job"] for job in raw]
 operations = []  # list of tuples (job, op_index, [(machine,duration),...])
 all_machines = set()
