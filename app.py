@@ -34,6 +34,9 @@ SOLVER_SCRIPTS = {
     "Gurobi (Exact)": PROJECT_DIR / "gurobi.py",
     "Genetic Algorithm": PROJECT_DIR / "Genetic_algorithm.py",
     "Simulated Annealing": PROJECT_DIR / "Simulated_annealing.py",
+    "Parçacık Sürü Optimizasyonu": PROJECT_DIR / "pso.py",
+    
+
 }
 
 
