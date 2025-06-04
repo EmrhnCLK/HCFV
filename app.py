@@ -107,7 +107,7 @@ for idx, (name, script_path) in enumerate(HEURISTICS.items()):
 st.markdown("---")
 
 # 2️⃣ Konsensus Birleştirme
-st.subheader("🔧 Consensus Fix")
+st.subheader("🔧 Consensus Maker")
 for name, script_path in CONSENSUS.items():
     if st.button(f"🚀 {name}"):
         exp = st.expander(f"{name} Logları", expanded=True)
