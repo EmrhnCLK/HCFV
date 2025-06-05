@@ -1,0 +1,310 @@
+[
+  {
+    "job": "A",
+    "operations": [
+      {
+        "machines": [
+          {
+            "machine": "1",
+            "duration": 2
+          },
+          {
+            "machine": "2",
+            "duration": 5
+          },
+          {
+            "machine": "3",
+            "duration": 4
+          },
+          {
+            "machine": "4",
+            "duration": 1
+          },
+          {
+            "machine": "5",
+            "duration": 2
+          }
+        ]
+      },
+      {
+        "machines": [
+          {
+            "machine": "1",
+            "duration": 5
+          },
+          {
+            "machine": "2",
+            "duration": 4
+          },
+          {
+            "machine": "3",
+            "duration": 5
+          },
+          {
+            "machine": "4",
+            "duration": 7
+          },
+          {
+            "machine": "5",
+            "duration": 5
+          }
+        ]
+      },
+      {
+        "machines": [
+          {
+            "machine": "1",
+            "duration": 4
+          },
+          {
+            "machine": "2",
+            "duration": 5
+          },
+          {
+            "machine": "3",
+            "duration": 5
+          },
+          {
+            "machine": "4",
+            "duration": 4
+          },
+          {
+            "machine": "5",
+            "duration": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "B",
+    "operations": [
+      {
+        "machines": [
+          {
+            "machine": "1",
+            "duration": 2
+          },
+          {
+            "machine": "2",
+            "duration": 5
+          },
+          {
+            "machine": "3",
+            "duration": 4
+          },
+          {
+            "machine": "4",
+            "duration": 7
+          },
+          {
+            "machine": "5",
+            "duration": 8
+          }
+        ]
+      },
+      {
+        "machines": [
+          {
+            "machine": "1",
+            "duration": 5
+          },
+          {
+            "machine": "2",
+            "duration": 6
+          },
+          {
+            "machine": "3",
+            "duration": 9
+          },
+          {
+            "machine": "4",
+            "duration": 8
+          },
+          {
+            "machine": "5",
+            "duration": 5
+          }
+        ]
+      },
+      {
+        "machines": [
+          {
+            "machine": "1",
+            "duration": 4
+          },
+          {
+            "machine": "2",
+            "duration": 5
+          },
+          {
+            "machine": "3",
+            "duration": 4
+          },
+          {
+            "machine": "4",
+            "duration": 54
+          },
+          {
+            "machine": "5",
+            "duration": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "C",
+    "operations": [
+      {
+        "machines": [
+          {
+            "machine": "1",
+            "duration": 9
+          },
+          {
+            "machine": "2",
+            "duration": 8
+          },
+          {
+            "machine": "3",
+            "duration": 6
+          },
+          {
+            "machine": "4",
+            "duration": 7
+          },
+          {
+            "machine": "5",
+            "duration": 9
+          }
+        ]
+      },
+      {
+        "machines": [
+          {
+            "machine": "1",
+            "duration": 6
+          },
+          {
+            "machine": "2",
+            "duration": 1
+          },
+          {
+            "machine": "3",
+            "duration": 2
+          },
+          {
+            "machine": "4",
+            "duration": 5
+          },
+          {
+            "machine": "5",
+            "duration": 4
+          }
+        ]
+      },
+      {
+        "machines": [
+          {
+            "machine": "1",
+            "duration": 2
+          },
+          {
+            "machine": "2",
+            "duration": 5
+          },
+          {
+            "machine": "3",
+            "duration": 4
+          },
+          {
+            "machine": "4",
+            "duration": 2
+          },
+          {
+            "machine": "5",
+            "duration": 4
+          }
+        ]
+      },
+      {
+        "machines": [
+          {
+            "machine": "1",
+            "duration": 4
+          },
+          {
+            "machine": "2",
+            "duration": 5
+          },
+          {
+            "machine": "3",
+            "duration": 2
+          },
+          {
+            "machine": "4",
+            "duration": 1
+          },
+          {
+            "machine": "5",
+            "duration": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job": "D",
+    "operations": [
+      {
+        "machines": [
+          {
+            "machine": "1",
+            "duration": 1
+          },
+          {
+            "machine": "2",
+            "duration": 5
+          },
+          {
+            "machine": "3",
+            "duration": 2
+          },
+          {
+            "machine": "4",
+            "duration": 4
+          },
+          {
+            "machine": "5",
+            "duration": 12
+          }
+        ]
+      },
+      {
+        "machines": [
+          {
+            "machine": "1",
+            "duration": 5
+          },
+          {
+            "machine": "2",
+            "duration": 1
+          },
+          {
+            "machine": "3",
+            "duration": 2
+          },
+          {
+            "machine": "4",
+            "duration": 1
+          },
+          {
+            "machine": "5",
+            "duration": 2
+          }
+        ]
+      }
+    ]
+  }
+]
